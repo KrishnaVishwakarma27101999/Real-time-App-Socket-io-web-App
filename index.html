@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RealTime Chat App</title>
+    <script defer src="http://localhost:3000/socket.io/socket.io.js"></script>
+    <script defer src="script.js"></script>
+    <style>
+        * {
+            background-color: red;
+            color: white;
+        }
+
+        #message-container {
+
+            margin: 50px auto;
+            width: 1200px;
+            display: flex;
+            align-items: center;
+            justify-items: center;
+            margin: 10px auto;
+            font-size: 30px;
+            flex-direction: column;
+        }
+
+        #send-container {
+
+            align-items: center;
+            justify-items: center;
+            margin: 10px auto;
+
+        }
+
+        #message-input {
+            width: 900px;
+            outline: none;
+            align-items: center;
+            justify-items: center;
+            margin: 20px auto;
+            padding: 0px 10px;
+            font-size: 25px;
+            height: 50px;
+        }
+
+        #send-button {
+            width: 100px;
+            padding: 0px 10px;
+            font-size: 25px;
+            outline: none;
+            height: 55px;
+            cursor: pointer;
+        }
+
+        #send-button:hover {
+            background-color: white;
+            color: red;
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="message-container">
+        <form action="" id="send-container">
+            <input type="text" id="message-input">
+            <button type="submit" id="send-button"> Send </button> </form>
+    </div>
+</body>
+
+</html>
